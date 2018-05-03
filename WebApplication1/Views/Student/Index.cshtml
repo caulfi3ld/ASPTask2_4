@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ASPTask2_4.Models.StudentModel>
+
+<h3>@ViewData["Message"]</h3>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+    </tr>
+}
